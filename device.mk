@@ -318,20 +318,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# Runtime Resource Overlays 
-PRODUCT_PACKAGES += \
-    ApertureOverlayRMX2020 \
-    CarrierConfigOverlayRMX2020 \
-    DialerOverlayRMX2020 \
-    DocumentsUIOverlayRMX2020 \
-    FrameworksResOverlayRMX2020 \
-    SettingsOverlayRMX2020 \
-    SettingsProviderOverlayRMX2020 \
-    SystemUIOverlayRMX2020 \
-    TelephonyOverlayRMX2020 \
-    TetheringResOverlayRMX2020 \
-    WifiResOverlayRMX2020
-
 ifneq ($(ARROW_GAPPS),true)
 PRODUCT_PACKAGES += \
     ApertureQRScannerOverlayRMX2020
@@ -398,6 +384,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(DEVICE_PATH)/configs/wifi/wifisar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wifisar.xml \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
