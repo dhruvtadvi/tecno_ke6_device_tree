@@ -15,7 +15,7 @@ $(call inherit-product, vendor/tecno/KE6/KE6-vendor.mk)
 PRODUCT_COPY_FILES += device/tecno/KE6/prebuilts/dtb.img:dtb.img
 PRODUCT_COPY_FILES += device/tecno/KE6/prebuilts/dtbo.img:dtbo.img
 PRODUCT_COPY_FILES += device/tecno/KE6/prebuilts/kernel:kernel
-PRODUCT_COPY_FILES += device/tecno/KE6/configs/fstab/recovery.fstab:recovery/root/system/etc/recovery.fstab
+PRODUCT_COPY_FILES += device/tecno/KE6/configs/recovery.fstab:recovery/root/system/etc/recovery.fstab
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1640
