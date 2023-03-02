@@ -121,17 +121,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-RMX2020
-
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX2020
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -193,10 +185,6 @@ PRODUCT_PACKAGES += \
 # Libxml2
 PRODUCT_PACKAGES += \
     libxml2.vendor
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.RMX2020
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -317,11 +305,6 @@ PRODUCT_PACKAGES += \
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
-
-ifneq ($(ARROW_GAPPS),true)
-PRODUCT_PACKAGES += \
-    ApertureQRScannerOverlayRMX2020
-endif
 
 # Secure element
 PRODUCT_PACKAGES += \
