@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/KE6/KE6-vendor.mk)
 
-PRODUCT_COPY_FILES += device/tecno/KE6/prebuilts/dtb.img:dtb.img
-PRODUCT_COPY_FILES += device/tecno/KE6/prebuilts/dtbo.img:dtbo.img
-PRODUCT_COPY_FILES += device/tecno/KE6/prebuilts/kernel:kernel
-PRODUCT_COPY_FILES += device/tecno/KE6/configs/recovery.fstab:recovery/root/system/etc/recovery.fstab
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/dtbo.img:dtbo.img
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/kernel:kernel
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/recovery.fstab:recovery/root/system/etc/recovery.fstab
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1640
