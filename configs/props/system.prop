@@ -6,7 +6,6 @@ pm.dexopt.downgrade_after_inactive_days=10
 pm.dexopt.shared=quicken
 qemu.hw.mainkeys=0
 ro.audio.silent=0
-ro.build.description=full_ke6_h6116-user 10 QP1A.190711.020 136185 release-keys
 ro.camera.sound.forced=0
 ro.kernel.zio=38,108,105,16
 ro.lmk.kill_heaviest_task=false
