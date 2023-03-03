@@ -124,10 +124,7 @@ MTK_PLATFORM := mt6761
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-BOARD_SEPOLICY_DIRS += \
-        $(DEVICE_PATH)/sepolicy/basic \
-        $(DEVICE_PATH)/sepolicy/bsp
-
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Manifests and SKU
